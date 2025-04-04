@@ -86,7 +86,7 @@ st.markdown("This chart displays the distribution of average family sizes across
 fs_data = filtered_data[fs_cols].sum()
 
 fig_bar = go.Figure(go.Bar(
-    x=["1-3 Members", "4-6 Members", "7+ Members"],
+    x=["1-3", "4-6", "7+"],
     y=fs_data,
     marker=dict(color=['#86c5da', '#add8e6', '#d4ebf2'])
 ))
